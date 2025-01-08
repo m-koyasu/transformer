@@ -1,1 +1,7 @@
 @charset "UTF-8"; /* 文字コードを指定 */
+
+img{
+    margin:0;
+    padding:0;
+}
+
