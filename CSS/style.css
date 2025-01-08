@@ -1,4 +1,9 @@
 @charset "UTF-8"; /* 文字コードを指定 */
+body{
+    margin:0;
+    
+}
+
 
 .mp0{
     margin:0;
