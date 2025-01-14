@@ -1,17 +1,99 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
-  <meta charset="utf-8">
-   <link rel="stylesheet" href="CSS/style.css">
+  <meta charset="UTF-8" />
+  <meta name="description" content="Airion株式会社のHP">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Airion株式会社 - AIスタートアップ</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="CSS/style.css" />
 </head>
 <body>
-  <img src="img/header_provisional.jpg" alt="Airion株式会社のヘッダー画像" class="mp0" > 
-  <!-- ↓POPでの表示? -->
-  <!--このサイトに辿り着けた方、おめでとうございます！AIに知見のあるあなたに、今日特別なご案内をさせていただきます！-->
-  
-  <div class="header_title">我々Airion株式会社は、現在急成長中の東大発のAIスタートアップです。製造業さんに特化して、AIサービスを提供させていただいています。</div>
-  <p>Airionでは、現在AIに興味のある学生インターンを募集しています！間違いなく、AIエンジニアとしてステップアップできるはずです！</p>
-  
 
+  <!-- ヘッダー -->
+  <header class="site-header">
+    <div class="header-inner">
+      <!-- ロゴなどを置く場合はここに -->
+      <h1 class="site-title">Airion株式会社</h1>
+      <nav class="site-nav">
+        <ul>
+          <li><a href="#top">TOP</a></li>
+          <li><a href="#about">Airionについて</a></li>
+          <li><a href="#works">事業・魅力</a></li>
+          <li><a href="#recruit">採用情報</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- メインビジュアルセクション -->
+  <section class="main-visual" id="top">
+    <!-- 背景イメージとしてCSSでdummy_main_visual.jpgを表示する場合も可 -->
+    <img src="img/dummy_main_visual.jpg" alt="メインビジュアル画像" />
+    <div class="visual-message">
+      <p>「transformer.it.com」で検索し、このサイトにたどり着いた方、<br/>
+      おめでとうございます！<br/>
+      AIに知見のあるあなたに、特別なご案内をさせていただきます！</p>
+    </div>
+  </section>
+
+  <!-- Aboutセクション -->
+  <section class="about-section" id="about">
+    <h2>About Airion</h2>
+    <p>
+      我々Airion株式会社は、現在急成長中の<br />
+      <strong>東大発のAIスタートアップ</strong>です。<br />
+      製造業さんに特化してAIサービスを提供させていただいています。
+    </p>
+  </section>
+
+  <!-- Works (Airionの魅力)セクション -->
+  <section class="works-section" id="works">
+    <h2>Airionの魅力</h2>
+    <div class="works-grid">
+      <div class="work-item">
+        <img src="img/dummy_section_img1.jpg" alt="魅力紹介1" />
+        <h3>魅力 1</h3>
+        <p>AI開発の最前線で技術力を磨ける環境。</p>
+      </div>
+      <div class="work-item">
+        <img src="img/dummy_section_img2.jpg" alt="魅力紹介2" />
+        <h3>魅力 2</h3>
+        <p>製造業特化の領域で大きな社会的インパクトに関われる。</p>
+      </div>
+      <div class="work-item">
+        <img src="img/dummy_section_img3.jpg" alt="魅力紹介3" />
+        <h3>魅力 3</h3>
+        <p>東大発の先端リサーチチームと協働し、常に学び続けられる。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- リクルートセクション -->
+  <section class="recruit-section" id="recruit">
+    <h2>採用情報</h2>
+    <p>
+      Airionでは現在、<strong>AIに興味のある学生インターン</strong>を募集しています！<br/>
+      間違いなく、AIエンジニアとしてステップアップできるはずです！
+    </p>
+    <p>
+      我々と一緒に働きたい方は、以下のページからまずはカジュアル面談にご応募ください！
+    </p>
+    <div class="button-area">
+      <a href="https://example.com/casual-interview" target="_blank" rel="noopener" class="btn-apply">
+        カジュアル面談はこちら
+      </a>
+    </div>
+  </section>
+
+  <!-- フッター -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>&copy; 2025 Airion Inc. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="JS/main.js"></script>
 </body>
 </html>
