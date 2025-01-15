@@ -1,15 +1,17 @@
-// ページ内リンクなどのスムーススクロールなどを実装する例
-document.addEventListener('DOMContentLoaded', () => {
-  const links = document.querySelectorAll('a[href^="#"]');
-  links.forEach(link => {
-    link.addEventListener('click', e => {
-      const targetId = link.getAttribute('href').substr(1);
+// JavaScriptの記述例
+document.addEventListener("DOMContentLoaded", function() {
+  // 例: ナビゲーションのリンクをクリックした際にスムーススクロールする
+  const navLinks = document.querySelectorAll(".header-nav a");
+
+  navLinks.forEach(link => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      const targetId = link.getAttribute("href").replace("#", "");
       const targetElement = document.getElementById(targetId);
       if (targetElement) {
-        e.preventDefault();
         window.scrollTo({
-          top: targetElement.offsetTop - 70, // ヘッダー分調整
-          behavior: 'smooth'
+          top: targetElement.offsetTop - 60,
+          behavior: "smooth"
         });
       }
     });
